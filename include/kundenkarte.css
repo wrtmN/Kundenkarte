@@ -1,0 +1,24 @@
+* { margin: 0; padding: 0 }
+html { height: 101% }
+body { background-color: #ccc; font-family: sans-serif}
+#all {
+	width:90%; min-width:540px;
+	margin: 10px auto;
+	box-shadow: 10px 10px 20px #333;
+	border-radius: 5px 5px 20px 4px;
+	background-color: #fff; color: #333
+}
+#wrapper { display: flex; min-height: 240px }
+#menu  { flex: 0 0 120px; padding: 1em }
+#content, #details { flex: 0 0 160px; border-left: 1px solid #ccc; padding: 1em; overflow: hidden; }
+
+.padding { padding: 10px }
+
+#menu ul li { list-style-type: none; line-height: 1.5em }
+#menu ul li a { text-decoration: none }
+#menu ul  li a { display: block; color: #33a}
+#menu ul li:hover, #menu ul li:active { background-color: #ccc}
+
+h1, h2 { color: #33f; margin: 10px 0 }
+input, select { margin: 0.3em 0; width: 12em; }
+#footer { color: #999; font-size: 80%}
