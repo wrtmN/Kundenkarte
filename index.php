@@ -42,11 +42,10 @@ if (isset($_GET['menu']))
 				<div id="content" class="padding">
 					<?php
 /* Anfang: Include-Code einbinden */
-
-if (is_file($includefile)) {
+if (is_file($includefile))
+{
 	include($includefile);
 }
-
 /* Ende: Include-Code einbinden */
 					?>
 				</div>
@@ -56,10 +55,12 @@ if (is_file($includefile)) {
 						echo '<div id="details">';
 						echo "<h2>Details</h2>";
 						//echo $kunde_selected;
+						//echo "<br>";
 						$data = "$shop_id,$kunde_selected";
 						// API einbinden
 						$img = "<img src='qrcode-api.php?data=$data&ec=4&logo=1' alt=''>";
 						echo $img;
+						echo "<p><a href='pdf-api.php?data=$data'>Download</a><p>";
 						echo "</div>";
 					}
 				?>

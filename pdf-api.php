@@ -27,7 +27,7 @@ $pdf = new FPDF();
 $pdf->SetFont("Helvetica");
 $pdf->SetTextColor(32,32,255);
 $pdf->AddPage();
-$pdf->Cell(20,20,$data);
+
 
 $data = utf8_decode($data);
 
@@ -47,7 +47,7 @@ $imgStream = dirname($url) . "/qrcode-api.php?data=$data&logo=1&ec=4";
 
 
 
-$pdf->Image($pdffile, 90, 20, 40, 40,'PNG');
+$pdf->Image($imgStream, 90, 20, 40, 40,'PNG');
 $pdf->Output("kundenkarte.pdf", "D");
 
 ?>
