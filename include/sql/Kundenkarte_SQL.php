@@ -1,5 +1,7 @@
 <?php
+
 class Kundenkarte_SQL
+
 {
   private $db, $dbuser, $dbpass, $dbtable;
 
